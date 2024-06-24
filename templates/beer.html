@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="navbar">
+        <div class="navbar_item cursor" onclick="togglePopup()">
+            <i class="fa-solid fa-wifi"></i><span style="padding-left: 10px">Wifi</span>
+
+
+            <div class="popup" id="popup-1">
+                <div class="overlay">
+                    <div class="content">
+                        <h3>Info</h3>
+                        <div class="inside_info mt-5">
+                            <h5>Wifi</h5>
+                            <p><i class="fa-solid fa-wifi px-3"></i>Name: barBar</p>
+                            <p><i class="fa-solid fa-lock px-3"></i>Pass: Bar1234</p>
+                        </div>
+                        <div class="inside_info mt-5">
+                            <h5 data-lang data-lang-al="Na Ndiqni" data-lang-en="Follow Us">Na Ndiqni</h5>
+                            <p><i class="fa-brands fa-instagram px-3"></i>bar_Bar</p>
+                            <p><i class="fa-brands fa-tiktok px-3"></i>bar_Bar</p>
+                        </div>
+                        <div class="inside_info mt-5">
+                            <h5 data-lang data-lang-al="Kontakto" data-lang-en="Contact Us">Kontakto</h5>
+                            <p><i class="fa-brands fa-whatsapp px-3"></i>06XXXXXXX</p>
+                            <p><i class="fa-solid fa-at px-3"></i>bar@gmail.com</p>
+                        </div>
+                        <div class="inside_info mt-5">
+                            <h5 data-lang data-lang-al="Orari" data-lang-en="Open Hours">Orari</h5>
+                            <p data-lang data-lang-al="Hapet: 8:00am" data-lang-en="Open: 8:00am"><i class="fa-regular fa-clock px-3"></i>Hapet: 8:00am</p>
+                            <p data-lang data-lang-al="Mbyllet: 00:00am" data-lang-en="Close: 00:00am"><i class="fa-solid fa-at px-3"></i>Mbyllet: 00:00am</p>
+                        </div>
+                        <div class="inside_info mt-5">
+                            <h5 data-lang data-lang-al="Adresa" data-lang-en="Address">Adresa</h5>
+                            <p data-lang data-lang-al="Rruga: Hime Kolli" data-lang-en="Hime Kolli street"><i class="fa-solid fa-location-dot px-3"></i>Rruga: Hime Kolli</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="navbar_item cursor" id="language-selector">
+            <i class="fa-solid fa-globe" id="globe-icon"></i>
+            <div id="language-options" style="display: none;">
+                <p id="lang-al" class="language-option">AL</p>
+                <p id="lang-en" class="language-option">EN</p>
+            </div>
+        </div>
+
+        <div class="navbar_item cursor">
+            <input type="checkbox" id="darkemode-toggle">
+            <label for="darkemode-toggle">
+                <svg width="800px" class="sun" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg width="800px" class="moon" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6V3M18.5 12V7M14.5 4.5H11.5M21 9.5H16M15.5548 16.8151C16.7829 16.8151 17.9493 16.5506 19 16.0754C17.6867 18.9794 14.7642 21 11.3698 21C6.74731 21 3 17.2527 3 12.6302C3 9.23576 5.02061 6.31331 7.92462 5C7.44944 6.05072 7.18492 7.21708 7.18492 8.44523C7.18492 13.0678 10.9322 16.8151 15.5548 16.8151Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid container_bg">
+    <div class="container_item mt-5 mb-5">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <h4 data-lang data-lang-al="Birra" data-lang-en="Beer">Birra</h4>
+        <div class="row" style="margin-right: 0; margin-left: 0;">
+            <div class="col-12 item">
+              <div class="desc">
+                <p>Amstel</p>
+                <div class="price">
+                  <p>200<span>Lek</span></p><p>2<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/amstel.jpg" alt="image">
+            </div>
+            <div class="col-12 item">
+              <div class="desc">
+                <p>Peroni</p>
+                <div class="price">
+                  <p>250<span>Lek</span></p><p>2.5<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/peroni.jpg" alt="image">
+            </div>
+            <div class="col-12 item">
+              <div class="desc">
+                <p data-lang data-lang-al="Birre Xhinxher" data-lang-en="Ginger Beer">Birre Xhinxher</p>
+                <div class="price">
+                  <p>400<span>Lek</span></p><p>4<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/ginger-beer.jpg" alt="image">
+            </div>
+            <div class="col-12 item">
+              <div class="desc">
+                <p>Tuborg</p>
+                <div class="price">
+                  <p>300<span>Lek</span></p><p>3<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/tuborg.jpg" alt="image">
+            </div>
+            <div class="col-12 item">
+              <div class="desc">
+                <p>Corona</p>
+                <div class="price">
+                  <p>400<span>Lek</span></p><p>4<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/corona.jpg" alt="image">
+            </div>
+            <div class="col-12 item">
+              <div class="desc">
+                <p>Paulaner Hefe Wibier</p>
+                <div class="price">
+                  <p>450<span>Lek</span></p><p>4.5<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/paulaner-weissbier.jpg" alt="image">
+            </div>
+            <div class="col-12 item">
+              <div class="desc">
+                <p>Paulaner Weis</p>
+                <div class="price">
+                  <p>450<span>Lek</span></p><p>4.5<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/paulaner-kristal.jpg" alt="image">
+            </div>
+            <div class="col-12 item">
+              <div class="desc">
+                <p data-lang data-lang-al="Leffe Bionde" data-lang-en="Leffe Blonde">Leffe Bionde</p>
+                <div class="price">
+                  <p>450<span>Lek</span></p><p>4.5<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/leffe-blonde.jpg" alt="image">
+            </div>
+            <div class="col-12 item">
+              <div class="desc">
+                <p data-lang data-lang-al="Leffe Brune" data-lang-en="Leffe Brown">Leffe Brune</p>
+                <div class="price">
+                  <p>450<span>Lek</span></p><p>4.5<span>Eur</span></p>
+                </div>
+              </div>
+              <img src="../image/leffe-brown.jpg" alt="image">
+            </div>
+
+            <div class="col-12 item">
+              <div class="desc">
+                <p></p>
+                <div class="price">
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toggler_menu">
+    <a href="index.html" class="toggler_item">
+        <p style="cursor: pointer; display: grid; justify-items: center"><i class="fa-solid fa-clipboard-list"></i>Menu</p>
+    </a>
+    <a href="offer.html" class="toggler_item">
+        <p style="cursor: pointer; display: grid; justify-items: center"><i class="fa-solid fa-tags"></i>Offer</p>
+    </a>
+    <a class="toggler_item" onclick="togglePopup()">
+        <p style="cursor: pointer; display: grid; justify-items: center"><i class="fa-solid fa-circle-info"></i>Info</p>
+    </a>
+</div>
+
+
+
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
